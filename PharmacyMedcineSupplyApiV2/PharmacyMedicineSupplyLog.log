@@ -1,0 +1,89 @@
+INFO  09:58:40 Application started. Press Ctrl+C to shut down.
+INFO  09:58:40 Application started. Press Ctrl+C to shut down.
+INFO  09:58:40 Hosting environment: Development
+INFO  09:58:40 Hosting environment: Development
+INFO  09:58:40 Content root path: C:\Users\com 1\source\repos\PharmacyMedicineSupplyApi
+INFO  09:58:40 Content root path: C:\Users\com 1\source\repos\PharmacyMedicineSupplyApi
+INFO  10:00:15  Http GetSupplies request Initiated
+INFO  10:00:24  Http GetSupplies request Initiated
+INFO  03:15:07 Application started. Press Ctrl+C to shut down.
+INFO  03:15:07 Application started. Press Ctrl+C to shut down.
+INFO  03:15:07 Hosting environment: Development
+INFO  03:15:07 Hosting environment: Development
+INFO  03:15:07 Content root path: C:\Users\com 1\source\repos\PharmacyMedicineSupplyApi
+INFO  03:15:07 Content root path: C:\Users\com 1\source\repos\PharmacyMedicineSupplyApi
+INFO  03:17:02  Http GetSupplies request Initiated
+INFO  03:17:14  Http GetSupplies request Initiated
+INFO  07:19:54 Application started. Press Ctrl+C to shut down.
+INFO  07:19:55 Application started. Press Ctrl+C to shut down.
+INFO  07:19:55 Hosting environment: Development
+INFO  07:19:55 Hosting environment: Development
+INFO  07:19:55 Content root path: C:\Users\com 1\source\repos\PharmacyMedicineSupplyApi
+INFO  07:19:55 Content root path: C:\Users\com 1\source\repos\PharmacyMedicineSupplyApi
+INFO  07:36:27  Http GetSupplies request Initiated
+ERROR 07:36:38 An unhandled exception has occurred while executing the request.
+System.Text.Json.JsonException: A possible object cycle was detected which is not supported. This can either be due to a cycle or if the object depth is larger than the maximum allowed depth of 32.
+   at System.Text.Json.ThrowHelper.ThrowInvalidOperationException_SerializerCycleDetected(Int32 maxDepth)
+   at System.Text.Json.JsonSerializer.Write(Utf8JsonWriter writer, Int32 originalWriterDepth, Int32 flushThreshold, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonSerializer.WriteAsyncCore(Stream utf8Json, Object value, Type inputType, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ERROR 07:36:38 An unhandled exception has occurred while executing the request.
+System.Text.Json.JsonException: A possible object cycle was detected which is not supported. This can either be due to a cycle or if the object depth is larger than the maximum allowed depth of 32.
+   at System.Text.Json.ThrowHelper.ThrowInvalidOperationException_SerializerCycleDetected(Int32 maxDepth)
+   at System.Text.Json.JsonSerializer.Write(Utf8JsonWriter writer, Int32 originalWriterDepth, Int32 flushThreshold, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonSerializer.WriteAsyncCore(Stream utf8Json, Object value, Type inputType, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+INFO  07:56:07 Application started. Press Ctrl+C to shut down.
+INFO  07:56:07 Application started. Press Ctrl+C to shut down.
+INFO  07:56:07 Hosting environment: Development
+INFO  07:56:07 Hosting environment: Development
+INFO  07:56:07 Content root path: C:\Users\com 1\source\repos\PharmacyMedicineSupplyApi
+INFO  07:56:07 Content root path: C:\Users\com 1\source\repos\PharmacyMedicineSupplyApi
+INFO  07:56:24  Http GetSupplies request Initiated
+ERROR 07:56:35  Http GetSupplies encountered an Excpetion :The given key 'Asprin' was not present in the dictionary.
+INFO  07:58:25  Http GetSupplies request Initiated
+ERROR 07:58:26  Http GetSupplies encountered an Excpetion :Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> PharmacyMedicineSupplyDto
+System.Object -> PharmacyMedicineSupplyApi.Models.PharmacyMedicineSupplyDto
+INFO  08:06:21 Application started. Press Ctrl+C to shut down.
+INFO  08:06:21 Application started. Press Ctrl+C to shut down.
+INFO  08:06:22 Hosting environment: Development
+INFO  08:06:22 Hosting environment: Development
+INFO  08:06:22 Content root path: C:\Users\com 1\source\repos\PharmacyMedicineSupplyApi
+INFO  08:06:22 Content root path: C:\Users\com 1\source\repos\PharmacyMedicineSupplyApi
+INFO  08:07:19  Http GetSupplies request Initiated
+INFO  07:43:11 Application started. Press Ctrl+C to shut down.
+INFO  07:43:11 Application started. Press Ctrl+C to shut down.
+INFO  07:43:11 Hosting environment: Development
+INFO  07:43:11 Hosting environment: Development
+INFO  07:43:11 Content root path: C:\Users\com 1\source\repos\PharmacyMedicineSupplyApi
+INFO  07:43:11 Content root path: C:\Users\com 1\source\repos\PharmacyMedicineSupplyApi
+INFO  07:44:05  Http GetSupplies request Initiated
