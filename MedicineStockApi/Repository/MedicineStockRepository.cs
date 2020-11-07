@@ -50,17 +50,23 @@ namespace MedicineStockApi.Repository
         {
             try
             {
-                if (MedicineDetails.ToList() != null)
+                if (MedicineDetails.ToList() == null)
                 {
+                    _log4net.Info("Null List Returned");
+                    return null; 
+                }
+                else
+                {
+                    _log4net.Info("Medicine List Returned");
                     return MedicineDetails.ToList();
                 }
             }
             catch (Exception E)
             {
                 _log4net.Error(" Http GetSupplies encountered an Exception :" + E.Message);
-
+                return "Some Error While fetching request";
             }
-            return "Some Error While fetching request";
+            
         }
 
     }

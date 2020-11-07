@@ -4,11 +4,14 @@ using Moq;
 using NUnit.Framework;
 using System.Collections.Generic;
 using MedicineStockApi.Models;
+using MedicineStockApi.Controllers;
+using Microsoft.AspNetCore.Mvc;
 
 namespace MedicalStockModuleTest
 {
     public class Tests
     {
+        
         private Mock<IMedicineStockRepository> _repo;
         private Mock<IMedicineStockService> _ser;
         public IMedicineStockService ser;
@@ -43,6 +46,7 @@ new MedicineStock {Name = "Cytotec",ChemicalComposition = "Myo-Inostiol,D-Chiro-
             Assert.AreEqual(medicinestock, answer);
             Assert.Pass();
         }
+       
         [Test]
         public void MedicineStockInfoTest_PassCase_Service()
         {
@@ -52,6 +56,9 @@ new MedicineStock {Name = "Cytotec",ChemicalComposition = "Myo-Inostiol,D-Chiro-
         [Test]
         public void MedicineStockInfoTest_FailCase_Service()
         {
+            medicinestock = null;
+            _ser.Setup(x => x.MedicineStockInformation1()).Returns(medicinestock);
+            ser = _ser.Object;
             List<MedicineStock> result = ser.MedicineStockInformation1();
             Assert.IsNull(result);
         }
@@ -64,9 +71,22 @@ new MedicineStock {Name = "Cytotec",ChemicalComposition = "Myo-Inostiol,D-Chiro-
         [Test]
         public void MedicineStockInfoTest_FailCase_Repository()
         {
+            medicinestock = null;
+            _repo.Setup(m => m.MedicineStockInformation()).Returns(medicinestock);
+            repo = _repo.Object;
             List<MedicineStock> result = repo.MedicineStockInformation();
             Assert.IsNull(result);
         }
-
+        [Test]
+        public void GetMedicineStockinfo_ValidInput_OkResult()
+        {
+            _ser.Setup(x => x.MedicineStockInformation1()).Returns(medicinestock);
+            var controller = new MedicineStockController(_ser.Object);
+            var data = controller.MedicineStockInformation();
+            var res = data as OkObjectResult;
+            Assert.AreEqual(200, res.StatusCode);
         }
+      
+
+    }
     }

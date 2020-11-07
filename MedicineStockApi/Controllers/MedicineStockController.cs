@@ -10,11 +10,9 @@ namespace MedicineStockApi.Controllers
 {
     public class MedicineStockController : Controller
     {
-        private IConfiguration configuration;
         private readonly IMedicineStockService service;
-        public MedicineStockController(IConfiguration config, IMedicineStockService service)
+        public MedicineStockController(IMedicineStockService service)
         {
-            configuration = config;
             this.service = service;
         }
         static readonly log4net.ILog _log4net = log4net.LogManager.GetLogger(typeof(MedicineStockController));
@@ -23,13 +21,22 @@ namespace MedicineStockApi.Controllers
         public IActionResult MedicineStockInformation()
         {
             _log4net.Info("Get Api Initiated");
-            var MedicineData = service.MedicineStockInformation1();
-            if (MedicineData == null)
+            try
             {
+                var MedicineData = service.MedicineStockInformation1();
+                if (MedicineData == null)
+                {
+                    _log4net.Info("Medicine Data Null");
+                    return BadRequest();
+                }
+                _log4net.Info("Medicine Data Returned");
+                return Ok(MedicineData);
+            }
+            catch (Exception E)
+            {
+                _log4net.Error(" Http MedicineStockInformation encountered an Exception :" + E.Message);
                 return BadRequest();
             }
-            return Ok(MedicineData);
-
         }
     }
 }

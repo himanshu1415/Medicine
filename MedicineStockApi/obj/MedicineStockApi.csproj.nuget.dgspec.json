@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\MFRFv1\\MedicineStockApi\\MedicineStockApi.csproj": {}
+    "F:\\MFRFV1\\MedicineStockApi\\MedicineStockApi.csproj": {}
   },
   "projects": {
-    "F:\\MFRFv1\\MedicineStockApi\\MedicineStockApi.csproj": {
+    "F:\\MFRFV1\\MedicineStockApi\\MedicineStockApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\MFRFv1\\MedicineStockApi\\MedicineStockApi.csproj",
+        "projectUniqueName": "F:\\MFRFV1\\MedicineStockApi\\MedicineStockApi.csproj",
         "projectName": "MedicineStockApi",
-        "projectPath": "F:\\MFRFv1\\MedicineStockApi\\MedicineStockApi.csproj",
+        "projectPath": "F:\\MFRFV1\\MedicineStockApi\\MedicineStockApi.csproj",
         "packagesPath": "C:\\Users\\himanshu\\.nuget\\packages\\",
-        "outputPath": "F:\\MFRFv1\\MedicineStockApi\\obj\\",
+        "outputPath": "F:\\MFRFV1\\MedicineStockApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

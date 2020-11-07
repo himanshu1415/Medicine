@@ -24,6 +24,7 @@ namespace MedicineStockApi
         }
 
         public IConfiguration Configuration { get; }
+        static readonly log4net.ILog _log4net = log4net.LogManager.GetLogger(typeof(Startup));
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
@@ -35,6 +36,7 @@ namespace MedicineStockApi
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Medicine Stock", Version = "v1" });
             });
+            _log4net.Info("Starup File started Running");
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

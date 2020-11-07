@@ -5679,11 +5679,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\MFRFv1\\MedicalStockModuleTest\\MedicalStockModuleTest.csproj",
+      "projectUniqueName": "F:\\MFRFV1\\MedicalStockModuleTest\\MedicalStockModuleTest.csproj",
       "projectName": "MedicalStockModuleTest",
-      "projectPath": "F:\\MFRFv1\\MedicalStockModuleTest\\MedicalStockModuleTest.csproj",
+      "projectPath": "F:\\MFRFV1\\MedicalStockModuleTest\\MedicalStockModuleTest.csproj",
       "packagesPath": "C:\\Users\\himanshu\\.nuget\\packages\\",
-      "outputPath": "F:\\MFRFv1\\MedicalStockModuleTest\\obj\\",
+      "outputPath": "F:\\MFRFV1\\MedicalStockModuleTest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5702,8 +5702,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "F:\\MFRFv1\\MedicineStockApi\\MedicineStockApi.csproj": {
-              "projectPath": "F:\\MFRFv1\\MedicineStockApi\\MedicineStockApi.csproj"
+            "F:\\MFRFV1\\MedicineStockApi\\MedicineStockApi.csproj": {
+              "projectPath": "F:\\MFRFV1\\MedicineStockApi\\MedicineStockApi.csproj"
             }
           }
         }
